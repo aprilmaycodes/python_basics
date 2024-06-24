@@ -36,7 +36,7 @@ We can do even more with strings. For example, adding a new line with \n or conc
 print('Hello ' + 'Viewer!\nYou\'re reading AprilMayCodes Intro Tutorial!')
 ```
 
-Notice the space in 'Hello ' to ensure proper spacing in the output. Another thing you'll notice is the '\' in 'you're'. This is because I printed the string with single quotations, so the program would expect that the string ends after the apostrophe. In order to prevent this, we add the backslash, which is an escape character. It basically tells Python that the following character needs to be interpreted differently than it normally would be.
+Notice the space in 'Hello ' to ensure proper spacing in the output. Another thing you'll notice is the '\\' in 'you're'. This is because I printed the string with single quotations, so the program would expect that the string ends after the apostrophe. In order to prevent this, we add the backslash, which is an escape character. It basically tells Python that the following character needs to be interpreted differently than it normally would be.
 
 In the case of 'You\'re' it tells Python that the apostrophe is not closing the string, but is instead a part of it.
 
