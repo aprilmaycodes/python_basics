@@ -391,7 +391,7 @@ pikachu = {
     'name': 'Pikachu',
     'type': 'Electric',
     'hp': 35,
-    'evolution': False
+    'evolution': True
     }
 
 gengar = {
@@ -454,7 +454,7 @@ Desired output example:
 Name: Pikachu
 Type: Electric
 HP: 35
-Evolution: False
+Evolution: True
 ```
 <details><summary>How’d you do? Let’s work through it together.</summary>
 
