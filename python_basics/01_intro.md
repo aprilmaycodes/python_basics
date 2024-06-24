@@ -179,7 +179,7 @@ print(health)
 ```
 Output
 ```
-35
+35.0
 ```
 ### Lists
 Lists are a collection of items. You create a list using square brackets [ ]. Lists can contain any type of data, and are very useful for storing like pieces of information.
