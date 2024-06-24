@@ -28,6 +28,6 @@ These tutorials are meant for educational purposes and to support our Discord co
 
 ## Connect
 
-Eventually, I'll be making video versions of these tutorials. You can find those on [my youtube](youtube.com/@aprilmaycodes).
+Eventually, I'll be making video versions of these tutorials. You can find those on [my youtube](https://youtube.com/@aprilmaycodes).
 
 Happy coding!
