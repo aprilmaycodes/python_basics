@@ -463,6 +463,58 @@ We want to print each item on a new line. So we’ll start by calling print, and
 ```
 print(f“Name: {pokedex[choice][‘name’]}\nType: {pokedex[choice]['type']}\nHP: {pokedex[choice]['hp']}\nEvolution: {pokedex[choice]['evolution']}")
 ```
+This is not the cleanest looking code, however. There is a nicer way we could write this.
+
+First, we'll store each element in a variable. Then, we'll use a print statement with an f string to access those variables, rather than writing out pokedex[choice][key] each time. So, the adjusted code should look something like this:
+
+```
+name = pokedex[choice]['name']
+pokemon_type = pokedex[choice]['type'] # we use pokemon_type instead of type because type is a reserved word in Python.
+hp = pokedex[choice]['hp']
+evolution = pokedex[choice]['evolution']
+
+print(f"Name: {name}\nType: {pokemon_type}\nHP: {hp}\nEvolution: {evolution}")
+```
+
+</details>
+
+<details>
+<summary>Complete Solution</summary>
+
+```
+pikachu = {
+    'name': 'Pikachu',
+    'type': 'Electric',
+    'hp': 35,
+    'evolution': True
+    }
+
+gengar = {
+    'name': 'Gengar',
+    'type': 'Ghost/Poison',
+    'hp': 60,
+    'evolution': True
+    }
+
+paras = {
+    'name': 'Paras',
+    'type': 'Bug/Grass',
+    'hp': 35,
+    'evolution': False
+    }
+
+pokedex = {'pikachu': pikachu, 'gengar': gengar, 'paras': paras}
+
+choice = input('Which pokemon would you like to learn about? Pikachu, gengar, or paras?’).lower()
+
+name = pokedex[choice]['name']
+pokemon_type = pokedex[choice]['type'] # we use pokemon_type instead of type because type is a reserved word in Python.
+hp = pokedex[choice]['hp']
+evolution = pokedex[choice]['evolution']
+
+print(f"Name: {name}\nType: {pokemon_type}\nHP: {hp}\nEvolution: {evolution}")
+```
+
 </details>
 
 ---
@@ -483,12 +535,53 @@ Now we’ll print the requested information.
 ```
 print(f”The information you requested is: {pokedex[choice][req_info]}”)
 ```
+Or
+```
+answer = pokedex[choice][req_info]
+print(f"The information you requested is: {answer}")
+```
 
-All in all it should look something like this:
+All in all it should look something like this when you run it:
 ```
 Which pokemon would you like to learn about? Pikachu, gengar, or paras? Gengar
 What info would you like to know? Name, type, hp, or evolution? Evolution
 The information you requested is: True
+```
+</details>
+
+<details>
+<summary>Complete Solution</summary>
+
+```
+pikachu = {
+    'name': 'Pikachu',
+    'type': 'Electric',
+    'hp': 35,
+    'evolution': True
+    }
+
+gengar = {
+    'name': 'Gengar',
+    'type': 'Ghost/Poison',
+    'hp': 60,
+    'evolution': True
+    }
+
+paras = {
+    'name': 'Paras',
+    'type': 'Bug/Grass',
+    'hp': 35,
+    'evolution': False
+    }
+
+pokedex = {'pikachu': pikachu, 'gengar': gengar, 'paras': paras}
+
+choice = input('Which pokemon would you like to learn about? Pikachu, gengar, or paras?’).lower()
+
+req_info = input('What info would you like to know? Name, type, hp, or evolution? ').lower()
+
+answer = pokedex[choice][req_info]
+print(f"The information you requested is: {answer}")
 ```
 </details>
 
